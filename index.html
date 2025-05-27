@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Report Assistant</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <h1>Report Comment Generator</h1>
+
+    <div class="input-group">
+        <label>Name: <input type="text" id="name" /></label><br />
+        <label>Pronouns:
+            <select id="pronouns">
+                <option value="he/him">he/him</option>
+                <option value="she/her">she/her</option>
+                <option value="they/them">they/them</option>
+            </select>
+        </label><br />
+        <label>Assessment Mark: <input type="text" id="mark" /></label><br />
+    </div>
+
+    <h2>Classroom Behavior</h2>
+    <form id="behavior-options">
+        <label><input type="checkbox" value="consistently displays excellent focus and engagement."> Excellent
+            focus</label><br />
+        <label><input type="checkbox" value="follows instructions quickly and accurately."> Follows
+            instructions</label><br />
+        <label><input type="checkbox" value="takes initiative and seeks extension opportunities."> Takes
+            initiative</label><br />
+        <label><input type="checkbox" value="is easily distracted and requires regular redirection."> Easily
+            distracted</label><br />
+        <label><input type="checkbox" value="has difficulty working cooperatively with others."> Struggles in group
+            work</label><br />
+    </form>
+
+    <h2>Assessment Performance</h2>
+    <form id="performance-options">
+        <label><input type="checkbox" value="demonstrated excellent understanding and insight in the assessment task.">
+            Excellent understanding</label><br />
+        <label><input type="checkbox" value="met most criteria with satisfactory explanations and reasoning.">
+            Satisfactory response</label><br />
+        <label><input type="checkbox" value="responses lacked clarity and required greater detail."> Lacked
+            clarity</label><br />
+        <label><input type="checkbox" value="demonstrated limited knowledge and minimal effort."> Limited
+            effort</label><br />
+    </form>
+
+    <h2>Suggested Improvements</h2>
+    <form id="improvement-options">
+        <label><input type="checkbox" value="is encouraged to revise content regularly to strengthen understanding.">
+            Revise content</label><br />
+        <label><input type="checkbox" value="should seek clarification when unsure of concepts."> Ask for
+            help</label><br />
+        <label><input type="checkbox" value="needs to improve focus and minimise distractions."> Improve
+            focus</label><br />
+        <label><input type="checkbox" value="should aim to follow instructions more closely."> Follow
+            instructions</label><br />
+    </form>
+
+    <button onclick="generateComment()">Generate Comment</button>
+
+    <h2>Generated Report Comment</h2>
+    <textarea id="output" rows="8" cols="80" readonly></textarea>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

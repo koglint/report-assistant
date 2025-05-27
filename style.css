@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    max-width: 800px;
+}
+
+h1,
+h2 {
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 8px 0;
+}
+
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 6px;
+    margin-top: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    margin: 20px 0;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+textarea {
+    background-color: #f9f9f9;
+    font-family: monospace;
+}
