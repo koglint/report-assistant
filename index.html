@@ -9,56 +9,93 @@
 </head>
 
 <body>
-    <h1>Report Comment Generator</h1>
+    <h1>Report Assistant</h1>
 
     <div class="input-group">
-        <label>Name: <input type="text" id="name" /></label><br />
+        <label>Name: <input type="text" id="name" /></label>
         <label>Pronouns:
             <select id="pronouns">
                 <option value="he/him">he/him</option>
                 <option value="she/her">she/her</option>
                 <option value="they/them">they/them</option>
             </select>
-        </label><br />
-        <label>Assessment Mark: <input type="text" id="mark" /></label><br />
+        </label>
+        <label>Assessment Mark: <input type="text" id="mark" /></label>
     </div>
 
     <h2>Classroom Behavior</h2>
     <form id="behavior-options">
-        <label><input type="checkbox" value="consistently displays excellent focus and engagement."> Excellent
-            focus</label><br />
-        <label><input type="checkbox" value="follows instructions quickly and accurately."> Follows
-            instructions</label><br />
-        <label><input type="checkbox" value="takes initiative and seeks extension opportunities."> Takes
-            initiative</label><br />
-        <label><input type="checkbox" value="is easily distracted and requires regular redirection."> Easily
-            distracted</label><br />
-        <label><input type="checkbox" value="has difficulty working cooperatively with others."> Struggles in group
-            work</label><br />
+        <label><input type="checkbox" value="consistently displays excellent focus and engagement."> Excellent focus</label>
+        <label><input type="checkbox" value="follows instructions quickly and accurately."> Follows instructions</label>
+        <label><input type="checkbox" value="takes initiative and seeks extension opportunities."> Takes initiative</label>
+        <label><input type="checkbox" value="is easily distracted and requires regular redirection."> Easily distracted</label>
+        <label><input type="checkbox" value="has difficulty working cooperatively with others."> Struggles in group work</label>
+        <label><input type="checkbox" value="consistently displays excellent focus and engagement."> Excellent focus</label>
+        <label><input type="checkbox" value="follows instructions quickly and accurately."> Follows instructions</label>
+        <label><input type="checkbox" value="takes initiative and seeks extension opportunities."> Seeks extension work</label>
+        <label><input type="checkbox" value="actively contributes to class discussions."> Contributes to discussions</label>
+        <label><input type="checkbox" value="works well both independently and in groups."> Independent and group work</label>
+        <label><input type="checkbox" value="demonstrates a positive and respectful attitude."> Respectful attitude</label>
+        <label><input type="checkbox" value="stays on task and uses time productively."> Uses time well</label>
+        <label><input type="checkbox" value="collaborates effectively with peers."> Collaborative</label>
+        <label><input type="checkbox" value="shows enthusiasm for learning activities."> Enthusiastic</label>
+        <label><input type="checkbox" value="is courteous and considerate in class interactions."> Courteous</label>
+        <label><input type="checkbox" value="generally follows instructions with minimal prompting."> Needs occasional prompting</label>
+        <label><input type="checkbox" value="occasionally needs reminders to stay on task."> Occasionally distracted</label>
+        <label><input type="checkbox" value="tends to become distracted during independent work."> Distracted during independent work</label>
+        <label><input type="checkbox" value="requires support to manage time effectively."> Needs help with time management</label>
+        <label><input type="checkbox" value="is reluctant to participate in class discussions."> Reluctant to speak in class</label>
+        <label><input type="checkbox" value="often needs encouragement to begin tasks."> Needs encouragement to start</label>
+        <label><input type="checkbox" value="struggles to remain focused without frequent reminders."> Frequently off-task</label>
+        <label><input type="checkbox" value="frequently engages in off-task behavior."> Off-task behavior</label>
+        <label><input type="checkbox" value="has difficulty working cooperatively with others."> Struggles with teamwork</label>
+        <label><input type="checkbox" value="regularly requires redirection to follow class expectations."> Regular redirection needed</label>
     </form>
 
     <h2>Assessment Performance</h2>
     <form id="performance-options">
-        <label><input type="checkbox" value="demonstrated excellent understanding and insight in the assessment task.">
-            Excellent understanding</label><br />
-        <label><input type="checkbox" value="met most criteria with satisfactory explanations and reasoning.">
-            Satisfactory response</label><br />
-        <label><input type="checkbox" value="responses lacked clarity and required greater detail."> Lacked
-            clarity</label><br />
-        <label><input type="checkbox" value="demonstrated limited knowledge and minimal effort."> Limited
-            effort</label><br />
+        <label><input type="checkbox" value="demonstrated excellent understanding and insight in the assessment task."> Excellent understanding</label>
+        <label><input type="checkbox" value="met most criteria with satisfactory explanations and reasoning."> Satisfactory response</label>
+        <label><input type="checkbox" value="responses lacked clarity and required greater detail."> Lacked clarity</label>
+        <label><input type="checkbox" value="demonstrated limited knowledge and minimal effort."> Limited effort</label>
+        <label><input type="checkbox" value="demonstrated excellent understanding and insight in the assessment task."> Excellent understanding</label>
+        <label><input type="checkbox" value="produced a thorough and well-structured response that addressed all criteria."> Well-structured response</label>
+        <label><input type="checkbox" value="applied critical thinking and analytical skills effectively."> Used critical thinking</label>
+        <label><input type="checkbox" value="supported their answers with detailed and accurate evidence."> Supported answers with evidence</label>
+        <label><input type="checkbox" value="communicated ideas clearly and coherently throughout."> Clear communication</label>
+        <label><input type="checkbox" value="showed a sound understanding of the task requirements."> Sound understanding</label>
+        <label><input type="checkbox" value="met most criteria with satisfactory explanations and reasoning."> Met most criteria</label>
+        <label><input type="checkbox" value="demonstrated basic knowledge but lacked depth in responses."> Basic knowledge</label>
+        <label><input type="checkbox" value="attempted all sections of the task with mixed success."> Attempted all sections</label>
+        <label><input type="checkbox" value="presented information clearly but with some inaccuracies."> Some inaccuracies</label>
+        <label><input type="checkbox" value="struggled to address key elements of the task."> Missed key elements</label>
+        <label><input type="checkbox" value="responses lacked clarity and required greater detail."> Lacked clarity and detail</label>
+        <label><input type="checkbox" value="misunderstood parts of the task instructions."> Misunderstood task</label>
+        <label><input type="checkbox" value="demonstrated limited knowledge and minimal effort."> Limited effort</label>
+        <label><input type="checkbox" value="failed to adequately respond to the task criteria."> Incomplete or inadequate response</label>
     </form>
 
     <h2>Suggested Improvements</h2>
     <form id="improvement-options">
-        <label><input type="checkbox" value="is encouraged to revise content regularly to strengthen understanding.">
-            Revise content</label><br />
-        <label><input type="checkbox" value="should seek clarification when unsure of concepts."> Ask for
-            help</label><br />
-        <label><input type="checkbox" value="needs to improve focus and minimise distractions."> Improve
-            focus</label><br />
-        <label><input type="checkbox" value="should aim to follow instructions more closely."> Follow
-            instructions</label><br />
+        <label><input type="checkbox" value="is encouraged to revise content regularly to strengthen understanding."> Revise content</label>
+        <label><input type="checkbox" value="should seek clarification when unsure of concepts."> Ask for help</label>
+        <label><input type="checkbox" value="needs to improve focus and minimise distractions."> Improve focus</label>
+        <label><input type="checkbox" value="should aim to follow instructions more closely."> Follow instructions</label>
+        <label><input type="checkbox" value="is encouraged to revise content regularly to strengthen understanding."> Revise content regularly</label>
+        <label><input type="checkbox" value="should seek clarification when unsure of concepts."> Ask for clarification</label>
+        <label><input type="checkbox" value="would benefit from planning responses more carefully."> Plan responses better</label>
+        <label><input type="checkbox" value="is advised to check work for accuracy before submission."> Check work for accuracy</label>
+        <label><input type="checkbox" value="should aim to expand on ideas with more detail and evidence."> Add more detail and evidence</label>
+        <label><input type="checkbox" value="is encouraged to use class time more effectively."> Use class time better</label>
+        <label><input type="checkbox" value="needs to improve focus and minimise distractions."> Improve focus</label>
+        <label><input type="checkbox" value="should develop greater independence in completing tasks."> Be more independent</label>
+        <label><input type="checkbox" value="would benefit from improving time management skills."> Improve time management</label>
+        <label><input type="checkbox" value="is encouraged to participate more actively in class discussions."> Participate more in discussions</label>
+        <label><input type="checkbox" value="should aim to follow instructions more closely."> Follow instructions more closely</label>
+        <label><input type="checkbox" value="is advised to practise key skills to build confidence."> Practise key skills</label>
+        <label><input type="checkbox" value="needs to improve organisation of work and materials."> Organise work better</label>
+        <label><input type="checkbox" value="is encouraged to set personal learning goals."> Set learning goals</label>
+        <label><input type="checkbox" value="should take greater care with written expression and clarity."> Improve written expression</label>
     </form>
 
     <button onclick="generateComment()">Generate Comment</button>
