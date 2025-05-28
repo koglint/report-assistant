@@ -137,6 +137,8 @@ textarea {
     background-color: #393939;
     font-family: monospace;
     color: #fff;
+    box-sizing: border-box;
+    max-width: 100%;
 
 }
 
