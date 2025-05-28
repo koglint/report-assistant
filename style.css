@@ -1,3 +1,5 @@
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
@@ -6,6 +8,7 @@ body {
     background-color: #1e1e1e;
     color: #cccccc;
 }
+
 .top-div {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -137,3 +140,44 @@ textarea {
 
 }
 
+@media (max-width: 768px) {
+    .top-div {
+        display: block
+    }
+
+    .body-div {
+        display: block
+    }
+
+    .button-comment-div {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    textarea {
+        width: 95vw;
+        font-size: 14px;
+    }
+
+    input[type="text"],
+    select {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .checkbox-div {
+        margin: 10px 0;
+        padding: 10px;
+    }
+
+    h1,
+    h2 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+}
