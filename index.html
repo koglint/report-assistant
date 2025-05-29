@@ -25,7 +25,16 @@
             </div>
         
             <div>
-                <label>Assessment Mark: <br/> <input type="text" id="mark" /></label>
+                <div id="mark-buttons" class="button-group">
+                    <span>Assessment Mark:</span><br />
+                    <button type="button" class="mark-btn" data-value="Outstanding">A</button>
+                    <button type="button" class="mark-btn" data-value="High">B</button>
+                    <button type="button" class="mark-btn" data-value="Expected">C</button>
+                    <button type="button" class="mark-btn" data-value="Basic">D</button>
+                    <button type="button" class="mark-btn" data-value="Limited">E</button>
+                </div>
+                <input type="hidden" id="mark" value="" />
+                  
                 <label>Other Information (e.g. subject, CAP/Core class, current topic, etc.): <input type="text" id="other" /></label>
             </div>
     </div>
@@ -157,7 +166,7 @@
                 and a
                 maximum of 1000 characters. It should follow this general structure:
             
-                1. Outline of the personality traits of the student (e.g. NAME is a polite and Co-operative student in the
+                1. Outline of the personality traits of the student (e.g. NAME is a polite and co-operative student in the
                 classroom).
                 2. Outline of their behaviour in class (e.g. he/she is generally attentive during lessons, able to work
                 independently on
@@ -280,7 +289,7 @@
                 * No capitals in: *first term*, *second semester*, *assessment task*, *exams* when used generally
                 *e.g. Robert enjoyed working on the student research task this term.*
             
-                * d Report writing should be in a formal style. Avoid using contractions. *e.g. Jason did not complete (not didn’t),
+                * d Report writing should be in a formal style. Avoid using contractions. *e.g. Jason did not complete (not didnt),
                 has not (not hasnt) completed.*
             
                 ---

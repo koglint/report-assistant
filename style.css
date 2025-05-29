@@ -142,6 +142,42 @@ textarea {
 
 }
 
+.mark-button-group {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 8px;
+    max-width: 100%;
+}
+
+.mark-btn {
+    width: 5vw !important;
+    /* overrides the 10vw */
+    flex: 1;
+    min-width: 0;
+    padding: 8px 0;
+    height: 40px !important;
+    /* override height if needed */
+    border: 1px solid #888;
+    background-color: #4b4b4b;
+    color: #e0e0e0;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.mark-btn.active {
+    background-color: #2196f3;
+    color: #fff;
+    border-color: #2196f3;
+}
+
+
+
+
+
+
 @media (max-width: 768px) {
     .top-div {
         display: block
@@ -157,6 +193,11 @@ textarea {
     }
 
     button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .mark-btn {
         width: 100%;
         margin-bottom: 10px;
     }

@@ -31,7 +31,7 @@ function generateComment() {
   const performance = getCheckedValues("#performance-options input:checked");
   const improvement = getCheckedValues("#improvement-options input:checked");
 
-  let comment = `${name} (${pronouns}) achieved a mark of ${mark}. Other relevant information to use is ${other}. `;
+  let comment = `${name} (${pronouns}) achieved a/an ${mark} assessment result. Other relevant information to use is ${other}. `;
 
   if (adjectives.length) comment += "Student is " + adjectives.join(" ") + " ";
   if (engagement.length) comment += "In terms of engagement with learning, " + engagement.join(" ");
@@ -166,4 +166,14 @@ function copyNonPrompt() {
       console.error("Failed to copy prompt: ", err);
     });
 }
+
+// Setup assessment mark buttons
+document.querySelectorAll('.mark-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.mark-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById("mark").value = btn.getAttribute('data-value');
+  });
+});
+
 
