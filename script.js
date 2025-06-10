@@ -203,14 +203,18 @@ const modifierSets = {
     "limited"
   ],
   nounModifier: [
-    "minimal", 
+    "significant",
+    "substantial",
+    "high",
+    "regular",
+    "occasional",
     "adequate", 
     "consistent", 
+    "adequate",
     "infrequent", 
-    "high", 
     "low", 
-    "irregular", 
-    "regular"  ]
+    "irregular" 
+  ]
 };
 
 
