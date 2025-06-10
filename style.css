@@ -79,7 +79,8 @@ input[type="checkbox"] {
 label {
     display: block;
     margin: 10px;
-    
+    line-height: 1.4;
+
 }
 
 input[type="text"],
@@ -173,6 +174,39 @@ textarea {
     border-color: #2196f3;
 }
 
+.modifier {
+    color: #4caf50;
+    font-weight: bold;
+    cursor: pointer;
+    border-bottom: 1px dashed #4caf50;
+    z-index: 9999;
+}
+
+.modifier-select {
+    position: absolute;
+    font-size: 1em;
+    z-index: 9999;
+}
+
+.custom-dropdown {
+    background: #333;
+    border: 1px solid #888;
+    border-radius: 4px;
+    padding: 4px 0;
+    min-width: 120px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.dropdown-option {
+    padding: 6px 12px;
+    cursor: pointer;
+    color: white;
+}
+
+.dropdown-option:hover {
+    background-color: #555;
+}
+
 
 
 
@@ -206,6 +240,8 @@ textarea {
         width: 95vw;
         font-size: 14px;
     }
+
+
 
     input[type="text"],
     select {

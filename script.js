@@ -176,4 +176,102 @@ document.querySelectorAll('.mark-btn').forEach(btn => {
   });
 });
 
+const modifierSets = {
+  frequency: [
+    "always",
+    "usually",
+    "often",
+    "sometimes",
+    "occasionally",
+    "rarely",
+    "never"
+  ],
+  degree: [
+    "extremely",
+    "very",
+    "fairly",
+    "somewhat",
+    "slightly",
+    "barely",
+    "not"
+  ],
+  academic: [
+    "outstanding",
+    "thorough",
+    "sound",
+    "basic",
+    "limited"
+  ],
+  nounModifier: [
+    "minimal", 
+    "adequate", 
+    "consistent", 
+    "infrequent", 
+    "high", 
+    "low", 
+    "irregular", 
+    "regular"  ]
+};
+
+
+document.addEventListener("click", (e) => {
+  if (e.target.classList.contains("modifier")) {
+    e.stopPropagation();
+    e.preventDefault();
+
+    const span = e.target;
+    const modifierType = span.getAttribute("data-modifier-type");
+    const currentValue = span.textContent.trim();
+
+    if (!modifierSets[modifierType]) return;
+
+    // Remove existing menus first
+    document.querySelectorAll(".custom-dropdown").forEach(d => d.remove());
+
+    const menu = document.createElement("div");
+    menu.className = "custom-dropdown";
+
+    modifierSets[modifierType].forEach(option => {
+      const item = document.createElement("div");
+      item.className = "dropdown-option";
+      item.textContent = option;
+      item.addEventListener("click", () => {
+        const newSpan = document.createElement("span");
+        newSpan.className = "modifier";
+        newSpan.setAttribute("data-modifier-type", modifierType);
+        newSpan.textContent = option;
+      
+        // Update the associated checkbox value
+        const label = span.closest("label");
+        const checkbox = label?.querySelector("input[type='checkbox']");
+        if (checkbox) {
+          // Replace only the old modifier part in the value
+          const oldText = checkbox.value;
+          const updated = oldText.replace(span.textContent.trim(), option);
+          checkbox.value = updated;
+        }
+      
+        span.replaceWith(newSpan);
+        menu.remove();
+      });
+      
+      menu.appendChild(item);
+    });
+
+    const rect = span.getBoundingClientRect();
+    menu.style.position = "absolute";
+    menu.style.top = `${window.scrollY + rect.top - 5}px`;
+    menu.style.left = `${window.scrollX + rect.left}px`;
+    menu.style.zIndex = "9999";
+    document.body.appendChild(menu);
+  } else {
+    // Close dropdown if clicked outside
+    document.querySelectorAll(".custom-dropdown").forEach(d => d.remove());
+  }
+});
+
+
+
+
+
 
