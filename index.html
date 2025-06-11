@@ -159,9 +159,17 @@
                 <label><input type="checkbox"> Improve the consistency of effort </label>
             </form>
         </div>
+
+        
     
     </div>
+    
+    <label>
+        Unique Student Information (e.g. information or story unique to student showing genuine connection):<br>
+        <textarea id="studentOther" rows="1" placeholder="Write something unique..."></textarea>
+    </label>
       
+
     <div class="comment-div">
         <div class="button-comment-div">
             <button onclick="generateComment()">Generate Comment</button>
@@ -189,313 +197,319 @@
         </h3>
         <button class ="copy-button"  onclick="copyAIPrompt()">Copy Gen AI Prompt</button>
         
-        <div class="ai-prompt-div">
-            <p>
-                Can you please write a report for the following students.
-            
-                The report should be aimed at parents and guardians, respectful and moderately formal. It must be a minimum of 900
-                and a
-                maximum of 1000 characters. It should follow this general structure:
-            
-                1. Outline of the personality traits of the student (e.g. NAME is a polite and co-operative student in the
-                classroom).
-                2. Outline of their behaviour in class (e.g. he/she is generally attentive during lessons, able to work
-                independently on
-                a given task).
-                3. Outline of their assessment tasks results using the following words as a scale: outstanding (80-100), high
-                (60-80),
-                expected (40-60) , basic (20-40), limited (0-20).
-                4. Outline of how they can improve in the future.
-                5. Finishing statement that congratulates or encourages the student.
-            
-                The overall tone should be lightly positive and encouraging, with no harshness or condemnation.
-            
-                Please have all as one paragraph (no line breaks). Please use Australian English spelling conventions.
-            
-                Remember, comments MUST be between 900 and 1000 characters.
-                The details of the specific students follow below.
-                After the name of the student are their pronouns.
-                Each student has a number, which represent the % of their mark in the assessment task, OR, a letter indicating the grade awarded for their assessment (A, B, C, D, E).
-            
-                Ensure that the comment for each student, while following the structure, must be unique and show an understanding of
-                the student as a unique individual.
-            
-                <br/><br/>
-
-                Below is the information from the report writing guideline document given to us by executive. Use the rules from
-                this document also but with less priority than the above criteria.
-            
-                <br />
-            
-                **2025 Quality Systems and Practices Strategic Direction #2.**
-            
-                **Report Writing Guidelines for Teachers**
-            
-                Student reports should be personalised and comprehensive. They should provide students and parents with detailed,
-                clear
-                and specific information about student learning, growth, next steps and improvement measures. Comments should
-                include
-                personalised, constructive statements, the students achievement and progress (overall or in specific tasks), effort
-                and
-                participation in the KLA/subject/course and at least one area for improvement and how it can be achieved.
-            
-                A suggested paragraph scaffold is:
-            
-                1. What the student has achieved (outcomes/tasks) a positive comment.
-                2. Their effort and participation in the course.
-                3. Where they need to focus/improve/develop and how they can make this improvement.
-            
-                In order to streamline our student report writing system, and provide consistency, please use the following
-                guidelines:
-            
-                ---
-            
-                ### 1. Audience
-            
-                The report is written for, and to, parents. Addressing the report to the student is not appropriate. The report
-                should
-                be written in plain English, be in the third person and easy for parents to understand. It should present
-                information in
-                clear, jargon-free language.
-            
-                ---
-            
-                ### 2. Length of Comments
-            
-                Report comments should be at least three sentences long, with a recommended maximum of 150 words (Max 1000
-                characters).
-                Generally, sentences should be kept short and no longer than 15 to 20 words.
-            
-                ---
-            
-                ### 3. Contradictions
-            
-                All care should be taken to align comments with marks, outcomes and student profile rankings. It is important that
-                class
-                teachers double-check this aspect: contradictions lead to a lack of credibility.
-            
-                **Examples of contradictions:**
-            
-                * a Jasmine has excellent reading skills. Reading Outcome: Limited
-                * b If Jason completed his homework regularly, his results would improve. Homework completed: Always
-            
-                ---
-            
-                ### 4. First Names
-            
-                The students official name must be used in comments as their report is a legal document. Anglicised versions,
-                shortened
-                names and nicknames are not to be used.
-            
-                **Example:** Samuel has achieved… (not Sam)
-            
-                ---
-            
-                ### 5. Subject Names
-            
-                * The name of a school subject should begin with a capital letter. *e.g. Jason works well in History.*
-                * When a comment is made about a students aptitude for a field of study or a concept, there is no capitalisation.
-                *e.g.
-                Jasmine is very interested in learning about history.*
-                * Subject names should not be abbreviated *e.g. Mathematics not Maths*
-            
-                ---
-            
-                ### 6. General Punctuation
-            
-                * a Remember to use commas where necessary.
-                * b Use an exclamation mark when adding sentence fragments at the end of a comment. *e.g. An excellent result!*
-                * c The use of capital letters and numerical figures will apply in the following examples:
-            
-                **Correct usage:**
-            
-                * Preliminary Course or Stage 4 Visual Arts
-                * Examination (capitalised)
-                * Specific examinations: Half-Yearly Examination, Yearly Examination, Trial HSC Examination
-                * Specific assessment tasks: First Fleet Assessment Task
-                * Topic/module titles: *Australia as a Nation* (history), *Exploring places* (geography)
-            
-                **Incorrect capitalisation:**
-            
-                * No capitals in: *first term*, *second semester*, *assessment task*, *exams* when used generally
-                *e.g. Robert enjoyed working on the student research task this term.*
-            
-                * d Report writing should be in a formal style. Avoid using contractions. *e.g. Jason did not complete (not didnt),
-                has not (not hasnt) completed.*
-            
-                ---
-            
-                ### 7. Agreed Spellings
-            
-                * a program (not programme)
-                * b co-operative (not cooperative)
-                * c focused
-                * d targeted
-                * e syllabuses
-                * f much-valued
-                * g Organise, synthesise (use English spelling)
-                * h class work
-                * i homework
-                * j well-mannered
-            
-                ---
-            
-                ### 8. Using the Conditional (“if”)
-            
-                Avoid making predictions about future performance; use words like **could** or **may** instead of **should,
-                shall, can** or **will**.
-            
-                **Example:**
-                *If Jason completed his homework on a regular basis, his marks could improve (not can improve).*
-            
-                Comments should not promise that if the student does what is recommended, then they will improve.
-            
-                ---
-            
-                ### 10. Avoid Clichés
-            
-                * i In order to improve, Jason must pull up his socks.
-                * ii Jasmine is finally getting the hang of Computer Technology.
-                * iii This term has been a real learning curve for Jason.
-            
-                ---
-            
-                ### 11. Homophones
-            
-                * **practise** (verb) / **practice** (noun)
-                *Jason must practise his computer skills.*
-                *With more practice, Jasmine will develop her computer skills.*
-            
-                * **affect** (verb) / **effect** (noun)
-                *Jasons inconsistent application to class tasks will affect his results.*
-                *Jasmines mark for this outstanding project has had a pleasing effect on her overall results.*
-            
-                * **there** (a place) / **their** (ownership)
-            
-                * **quite** (adverb) / **quiet** (adjective)
-                *Jason works quite well in class.*
-                *Jasmine is a quiet student.*
-            
-                * **been** (past participle) / **being** (present participle)
-                *Jason has been an active participant in class discussion.*
-                *Jasmine is being a constant distraction in class.*
-            
-                ---
-            
-                ### 12. Subject / Verb Agreement
-            
-                Single subjects = single verbs. Plural subjects = plural verbs.
-            
-                **Examples:**
-            
-                * *Jasmines assignment mark was very high.*
-                * *Jasons assignment mark and his test result were both very high.*
-            
-                More examples:
-            
-                * *His attitude in class and his sudden request for more homework are pleasing to note.*
-                * *Jasons attention to detail and neatness is very pleasing.*
-            
-                ---
-            
-                ### 13. When to Use However
-            
-                * However is an adverb, **not a conjunction**.
-                * If you can replace however with but, the sentence is incorrect.
-                * When used mid-sentence: use commas on both sides.
-                * When used at the start: follow with a comma.
-            
-                **Correct usage:**
-            
-                * *Awia effectively uses a variety of persuasive techniques in her writing. She needs, however, to edit her work
-                more
-                thoroughly.*
-                * *Awia effectively uses a variety of persuasive techniques in her writing. However, she needs to edit her work more
-                thoroughly.*
-            
-                ---
-            
-                ### 14. Reporting on A to E Common Grade Scale
-            
-                | Grade | Descriptor | Summary |
-                | ----- | ----------- | ---------------------------------------- |
-                | A | Outstanding | Confident in new & complex situations |
-                | B | High | Confident in familiar & new situations |
-                | C | Expected | Applies knowledge in familiar situations |
-                | D | Basic | Applies with support |
-                | E | Limited | Needs significant support |
-            
-                ---
-            
-                ### 15. Reporting on Effort
-            
-                | Effort | Description |
-                | ------------ | -------------------------------------------------------- |
-                | High | Actively participates, completes work to a high standard |
-                | Satisfactory | Regularly participates, meets required standards |
-                | Low | Sometimes participates, occasionally completes work |
-            
-                ---
-            
-                ### 16. Reporting on ERIC Values
-            
-                | Rating | Description |
-                | ---------- | ----------------------------------------------------- |
-                | Exceeding | Consistently demonstrates ERIC values, role model |
-                | Expected | Generally respectful, positive contributor |
-                | Developing | Occasionally needs support to make respectful choices |
-            
-                ---
-            
-                ### 17. Example Report Comments
-            
-                **Renae:**
-                *Renae is a highly motivated student who has achieved strong results in all assessment tasks, including her detailed
-                and
-                well-presented project on natural disasters. This task showcased her ability to synthesise information from multiple
-                sources and effectively use visuals such as graphs and diagrams to support her analysis. She consistently applies
-                herself in class and demonstrates a high level of engagement and effort in all activities. To further enhance the
-                sophistication of her writing, Renae should focus on incorporating more precise and subject-specific vocabulary.
-                This
-                can be developed by identifying general terms during the editing process and replacing them with more accurate
-                academic
-                language.*
-            
-                **Amir:**
-                *Amir demonstrates safe practices when creating and producing design solutions in the workshop and is developing a
-                solid
-                understanding of the design process. He is always willing to contribute to class discussions and regularly offers
-                assistance to his peers, showing a collaborative and positive attitude. Amir is continuing to develop his technical
-                drawing skills but finds it challenging to follow detailed instructions, which has impacted his ability to complete
-                projects within the allocated time. His portfolio would benefit from more detailed descriptions of the manufacturing
-                steps. By improving his focus during practical lessons and carefully following teacher instructions, Amir may be
-                better
-                positioned to improve the quality of his learning activities.*
-            
-                ---
-            
-                ### 18. No Attendance or Extremely Low Attendance Comment
-            
-                *Due to \[STUDENT NAME]s extended absence from school, I am unable to assess their current understanding, knowledge,
-                or
-                skills in \[SUBJECT]. \[STUDENT NAME] has not completed any school-based learning activities or assessments task/s.
-                To
-                complete the course requirements in \[SUBJECT], \[STUDENT NAME] will need to attend school regularly, engage in
-                learning
-                activities and attempt formal assessment tasks.*
-            
-                ---
-            
-                ### 19. Low Attendance Comment
-            
-                *Due to \[STUDENT NAME]s limited class attendance, \[he/she/they] has missed some important concepts and skills in
-                \[SUBJECT]. These absences have made it difficult to accurately and reliably assess \[STUDENT NAME]'s current
-                knowledge
-                and understanding. When in class, \[STUDENT NAME] has demonstrated (list anything the student has demonstrated when
-                present in class). To improve, \[STUDENT NAME] should take greater responsibility for their own development, attend
-                class more regularly and ensure \[he/she/they] completes all learning tasks to the best of their ability.*
-
-            </p>
+        <div >
+            <details>
+                <summary> Gen AI Prompt</summary>
+                    <p class="ai-prompt-div">
+                        Can you please write a report for the following students.
+                        
+                        The report should be aimed at parents and guardians, respectful and moderately formal. It must be a minimum of 900
+                        and a
+                        maximum of 1000 characters. It should follow this general structure:
+                        
+                        1. Outline of the personality traits of the student (e.g. NAME is a polite and co-operative student in the
+                        classroom).
+                        2. Outline of their behaviour in class (e.g. he/she is generally attentive during lessons, able to work
+                        independently on
+                        a given task).
+                        3. Outline of their assessment tasks results using the following words as a scale: outstanding (80-100), high
+                        (60-80),
+                        expected (40-60) , basic (20-40), limited (0-20).
+                        4. Outline of how they can improve in the future.
+                        5. Finishing statement that congratulates or encourages the student.
+                        
+                        The overall tone should be lightly positive and encouraging, with no harshness or condemnation.
+                        
+                        Please have all as one paragraph (no line breaks). Please use Australian English spelling conventions.
+                        
+                        Remember, comments MUST be between 900 and 1000 characters.
+                        The details of the specific students follow below.
+                        After the name of the student are their pronouns.
+                        Each student has a number, which represent the % of their mark in the assessment task, OR, a letter indicating the grade
+                        awarded for their assessment (A, B, C, D, E).
+                        
+                        Ensure that the comment for each student, while following the structure, must be unique and show an understanding of
+                        the student as a unique individual.
+                        
+                        <br /><br />
+                        
+                        Below is the information from the report writing guideline document given to us by executive. Use the rules from
+                        this document also but with less priority than the above criteria.
+                        
+                        <br />
+                        
+                        **2025 Quality Systems and Practices Strategic Direction #2.**
+                        
+                        **Report Writing Guidelines for Teachers**
+                        
+                        Student reports should be personalised and comprehensive. They should provide students and parents with detailed,
+                        clear
+                        and specific information about student learning, growth, next steps and improvement measures. Comments should
+                        include
+                        personalised, constructive statements, the students achievement and progress (overall or in specific tasks), effort
+                        and
+                        participation in the KLA/subject/course and at least one area for improvement and how it can be achieved.
+                        
+                        A suggested paragraph scaffold is:
+                        
+                        1. What the student has achieved (outcomes/tasks) a positive comment.
+                        2. Their effort and participation in the course.
+                        3. Where they need to focus/improve/develop and how they can make this improvement.
+                        
+                        In order to streamline our student report writing system, and provide consistency, please use the following
+                        guidelines:
+                        
+                        ---
+                        
+                        ### 1. Audience
+                        
+                        The report is written for, and to, parents. Addressing the report to the student is not appropriate. The report
+                        should
+                        be written in plain English, be in the third person and easy for parents to understand. It should present
+                        information in
+                        clear, jargon-free language.
+                        
+                        ---
+                        
+                        ### 2. Length of Comments
+                        
+                        Report comments should be at least three sentences long, with a recommended maximum of 150 words (Max 1000
+                        characters).
+                        Generally, sentences should be kept short and no longer than 15 to 20 words.
+                        
+                        ---
+                        
+                        ### 3. Contradictions
+                        
+                        All care should be taken to align comments with marks, outcomes and student profile rankings. It is important that
+                        class
+                        teachers double-check this aspect: contradictions lead to a lack of credibility.
+                        
+                        **Examples of contradictions:**
+                        
+                        * a Jasmine has excellent reading skills. Reading Outcome: Limited
+                        * b If Jason completed his homework regularly, his results would improve. Homework completed: Always
+                        
+                        ---
+                        
+                        ### 4. First Names
+                        
+                        The students official name must be used in comments as their report is a legal document. Anglicised versions,
+                        shortened
+                        names and nicknames are not to be used.
+                        
+                        **Example:** Samuel has achieved… (not Sam)
+                        
+                        ---
+                        
+                        ### 5. Subject Names
+                        
+                        * The name of a school subject should begin with a capital letter. *e.g. Jason works well in History.*
+                        * When a comment is made about a students aptitude for a field of study or a concept, there is no capitalisation.
+                        *e.g.
+                        Jasmine is very interested in learning about history.*
+                        * Subject names should not be abbreviated *e.g. Mathematics not Maths*
+                        
+                        ---
+                        
+                        ### 6. General Punctuation
+                        
+                        * a Remember to use commas where necessary.
+                        * b Use an exclamation mark when adding sentence fragments at the end of a comment. *e.g. An excellent result!*
+                        * c The use of capital letters and numerical figures will apply in the following examples:
+                        
+                        **Correct usage:**
+                        
+                        * Preliminary Course or Stage 4 Visual Arts
+                        * Examination (capitalised)
+                        * Specific examinations: Half-Yearly Examination, Yearly Examination, Trial HSC Examination
+                        * Specific assessment tasks: First Fleet Assessment Task
+                        * Topic/module titles: *Australia as a Nation* (history), *Exploring places* (geography)
+                        
+                        **Incorrect capitalisation:**
+                        
+                        * No capitals in: *first term*, *second semester*, *assessment task*, *exams* when used generally
+                        *e.g. Robert enjoyed working on the student research task this term.*
+                        
+                        * d Report writing should be in a formal style. Avoid using contractions. *e.g. Jason did not complete (not didnt),
+                        has not (not hasnt) completed.*
+                        
+                        ---
+                        
+                        ### 7. Agreed Spellings
+                        
+                        * a program (not programme)
+                        * b co-operative (not cooperative)
+                        * c focused
+                        * d targeted
+                        * e syllabuses
+                        * f much-valued
+                        * g Organise, synthesise (use English spelling)
+                        * h class work
+                        * i homework
+                        * j well-mannered
+                        
+                        ---
+                        
+                        ### 8. Using the Conditional (“if”)
+                        
+                        Avoid making predictions about future performance; use words like **could** or **may** instead of **should,
+                        shall, can** or **will**.
+                        
+                        **Example:**
+                        *If Jason completed his homework on a regular basis, his marks could improve (not can improve).*
+                        
+                        Comments should not promise that if the student does what is recommended, then they will improve.
+                        
+                        ---
+                        
+                        ### 10. Avoid Clichés
+                        
+                        * i In order to improve, Jason must pull up his socks.
+                        * ii Jasmine is finally getting the hang of Computer Technology.
+                        * iii This term has been a real learning curve for Jason.
+                        
+                        ---
+                        
+                        ### 11. Homophones
+                        
+                        * **practise** (verb) / **practice** (noun)
+                        *Jason must practise his computer skills.*
+                        *With more practice, Jasmine will develop her computer skills.*
+                        
+                        * **affect** (verb) / **effect** (noun)
+                        *Jasons inconsistent application to class tasks will affect his results.*
+                        *Jasmines mark for this outstanding project has had a pleasing effect on her overall results.*
+                        
+                        * **there** (a place) / **their** (ownership)
+                        
+                        * **quite** (adverb) / **quiet** (adjective)
+                        *Jason works quite well in class.*
+                        *Jasmine is a quiet student.*
+                        
+                        * **been** (past participle) / **being** (present participle)
+                        *Jason has been an active participant in class discussion.*
+                        *Jasmine is being a constant distraction in class.*
+                        
+                        ---
+                        
+                        ### 12. Subject / Verb Agreement
+                        
+                        Single subjects = single verbs. Plural subjects = plural verbs.
+                        
+                        **Examples:**
+                        
+                        * *Jasmines assignment mark was very high.*
+                        * *Jasons assignment mark and his test result were both very high.*
+                        
+                        More examples:
+                        
+                        * *His attitude in class and his sudden request for more homework are pleasing to note.*
+                        * *Jasons attention to detail and neatness is very pleasing.*
+                        
+                        ---
+                        
+                        ### 13. When to Use However
+                        
+                        * However is an adverb, **not a conjunction**.
+                        * If you can replace however with but, the sentence is incorrect.
+                        * When used mid-sentence: use commas on both sides.
+                        * When used at the start: follow with a comma.
+                        
+                        **Correct usage:**
+                        
+                        * *Awia effectively uses a variety of persuasive techniques in her writing. She needs, however, to edit her work
+                        more
+                        thoroughly.*
+                        * *Awia effectively uses a variety of persuasive techniques in her writing. However, she needs to edit her work more
+                        thoroughly.*
+                        
+                        ---
+                        
+                        ### 14. Reporting on A to E Common Grade Scale
+                        
+                        | Grade | Descriptor | Summary |
+                        | ----- | ----------- | ---------------------------------------- |
+                        | A | Outstanding | Confident in new & complex situations |
+                        | B | High | Confident in familiar & new situations |
+                        | C | Expected | Applies knowledge in familiar situations |
+                        | D | Basic | Applies with support |
+                        | E | Limited | Needs significant support |
+                        
+                        ---
+                        
+                        ### 15. Reporting on Effort
+                        
+                        | Effort | Description |
+                        | ------------ | -------------------------------------------------------- |
+                        | High | Actively participates, completes work to a high standard |
+                        | Satisfactory | Regularly participates, meets required standards |
+                        | Low | Sometimes participates, occasionally completes work |
+                        
+                        ---
+                        
+                        ### 16. Reporting on ERIC Values
+                        
+                        | Rating | Description |
+                        | ---------- | ----------------------------------------------------- |
+                        | Exceeding | Consistently demonstrates ERIC values, role model |
+                        | Expected | Generally respectful, positive contributor |
+                        | Developing | Occasionally needs support to make respectful choices |
+                        
+                        ---
+                        
+                        ### 17. Example Report Comments
+                        
+                        **Renae:**
+                        *Renae is a highly motivated student who has achieved strong results in all assessment tasks, including her detailed
+                        and
+                        well-presented project on natural disasters. This task showcased her ability to synthesise information from multiple
+                        sources and effectively use visuals such as graphs and diagrams to support her analysis. She consistently applies
+                        herself in class and demonstrates a high level of engagement and effort in all activities. To further enhance the
+                        sophistication of her writing, Renae should focus on incorporating more precise and subject-specific vocabulary.
+                        This
+                        can be developed by identifying general terms during the editing process and replacing them with more accurate
+                        academic
+                        language.*
+                        
+                        **Amir:**
+                        *Amir demonstrates safe practices when creating and producing design solutions in the workshop and is developing a
+                        solid
+                        understanding of the design process. He is always willing to contribute to class discussions and regularly offers
+                        assistance to his peers, showing a collaborative and positive attitude. Amir is continuing to develop his technical
+                        drawing skills but finds it challenging to follow detailed instructions, which has impacted his ability to complete
+                        projects within the allocated time. His portfolio would benefit from more detailed descriptions of the manufacturing
+                        steps. By improving his focus during practical lessons and carefully following teacher instructions, Amir may be
+                        better
+                        positioned to improve the quality of his learning activities.*
+                        
+                        ---
+                        
+                        ### 18. No Attendance or Extremely Low Attendance Comment
+                        
+                        *Due to \[STUDENT NAME]s extended absence from school, I am unable to assess their current understanding, knowledge,
+                        or
+                        skills in \[SUBJECT]. \[STUDENT NAME] has not completed any school-based learning activities or assessments task/s.
+                        To
+                        complete the course requirements in \[SUBJECT], \[STUDENT NAME] will need to attend school regularly, engage in
+                        learning
+                        activities and attempt formal assessment tasks.*
+                        
+                        ---
+                        
+                        ### 19. Low Attendance Comment
+                        
+                        *Due to \[STUDENT NAME]s limited class attendance, \[he/she/they] has missed some important concepts and skills in
+                        \[SUBJECT]. These absences have made it difficult to accurately and reliably assess \[STUDENT NAME]'s current
+                        knowledge
+                        and understanding. When in class, \[STUDENT NAME] has demonstrated (list anything the student has demonstrated when
+                        present in class). To improve, \[STUDENT NAME] should take greater responsibility for their own development, attend
+                        class more regularly and ensure \[he/she/they] completes all learning tasks to the best of their ability.*
+                        
+                        </p>
+                
+            </details>
+                
         </div>
         
             <h1> Non or Low Attenders</h1>

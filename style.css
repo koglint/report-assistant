@@ -95,6 +95,16 @@ select {
     border: 1px solid #444;
 }
 
+#studentOther {
+    overflow: hidden;
+    resize: none;
+    width: 100%;
+    min-height: 40px;
+    font-family: inherit;
+    font-size: 14px;
+    background-color:#011d28
+}
+
 button {
     margin: 0;
     padding: 10px;
@@ -206,6 +216,11 @@ textarea {
 .dropdown-option:hover {
     background-color: #555;
 }
+
+summary {
+    cursor: pointer;
+    font-weight: bold;
+    outline: none; }
 
 
 

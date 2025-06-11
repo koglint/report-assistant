@@ -16,6 +16,7 @@ function generateComment() {
   const pronouns = document.getElementById("pronouns").value;
   const mark = document.getElementById("mark").value.trim();
   const other = document.getElementById("other").value.trim();
+  const studentOther = document.getElementById("studentOther").value.trim();
 
   const adjectiveChecks = document.querySelectorAll("#student-adjectives input:checked");
   const engagementChecks = document.querySelectorAll("#engagement-options input:checked");
@@ -31,7 +32,7 @@ function generateComment() {
   const performance = getCheckedValues("#performance-options input:checked");
   const improvement = getCheckedValues("#improvement-options input:checked");
 
-  let comment = `${name} (${pronouns}) achieved a/an ${mark} assessment result. Other relevant information to use is ${other}. `;
+  let comment = `${name} (${pronouns}) achieved a/an ${mark} assessment result. Other relevant information about the class to use is ${other}. Information unique to this student is ${studentOther}. `;
 
   if (adjectives.length) comment += "Student is " + adjectives.join(" ") + " ";
   if (engagement.length) comment += "In terms of engagement with learning, " + engagement.join(" ");
@@ -47,6 +48,7 @@ function generateComment() {
     pronouns,
     mark,
     other,
+    studentOther,
     adjectives,
     engagement,
     behavior,
@@ -92,6 +94,7 @@ function clearAll() {
   document.getElementById("pronouns").value = "";
   document.getElementById("mark").value = "";
   document.getElementById("other").value = "";
+  document.getElementById("studentOther").value = "";
   document.getElementById("output").value = "";
 
   document.querySelectorAll("input[type='checkbox']").forEach(cb => cb.checked = false);
@@ -101,6 +104,7 @@ function clearAll() {
 function clearExceptOther() {
   document.getElementById("name").value = "";
   document.getElementById("pronouns").value = "";
+  document.getElementById("studentOther").value = "";
   document.getElementById("mark").value = "";
   document.getElementById("output").value = "";
 
@@ -116,6 +120,7 @@ function undoComment() {
   document.getElementById("pronouns").value = lastState.pronouns;
   document.getElementById("mark").value = lastState.mark;
   document.getElementById("other").value = lastState.other;
+  document.getElementById("studentOther").value = lastState.studentOther;
 
   restoreCheckedValues("#student-adjectives input", lastState.adjectives);
   restoreCheckedValues("#engagement-options input", lastState.engagement);
@@ -274,6 +279,13 @@ document.addEventListener("click", (e) => {
   }
 });
 
+
+const studentOther = document.getElementById("studentOther");
+
+studentOther.addEventListener("input", () => {
+  studentOther.style.height = "auto";
+  studentOther.style.height = studentOther.scrollHeight + "px";
+});
 
 
 
