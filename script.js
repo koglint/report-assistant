@@ -34,10 +34,10 @@ function generateComment() {
 
   let comment = `${name} (${pronouns}) achieved a/an ${mark} assessment result. Other relevant information about the class to use is ${other}. Information unique to this student is ${studentOther}. `;
 
-  if (adjectives.length) comment += "Student is " + adjectives.join(" ") + " ";
-  if (engagement.length) comment += "In terms of engagement with learning, " + engagement.join(" ");
-  if (behavior.length) comment += "During lessons, " + behavior.join(" ");
-  if (collab.length) comment += "In the classroom, " + collab.join(" ");
+  if (adjectives.length) comment += " Student is " + adjectives.join(" ") + " ";
+  if (engagement.length) comment += " In terms of engagement with learning, " + engagement.join(" ");
+  if (behavior.length) comment += " During lessons, " + behavior.join(" ");
+  if (collab.length) comment += " In the classroom, " + collab.join(" ");
   if (performance.length) comment += " In the assessment task, " + performance.join(" ");
   if (improvement.length) comment += " To improve, " + improvement.join(" ");
 
